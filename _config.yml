@@ -1,2 +1,5 @@
 theme: jekyll-theme-slate
 title: LogiTorch
+
+github:
+  zip_url: https://github.com/ChadiHelwe/logitorch

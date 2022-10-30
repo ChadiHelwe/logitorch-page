@@ -1,5 +1,4 @@
-![image](logo.jpg)
-
+<img src="logo.jpg" width="50%"  style="display:block; margin-left:auto; margin-right:auto;"/>
 
 LogiTorch is a PyTorch-based library for logical reasoning on natural language, it consists of:
 

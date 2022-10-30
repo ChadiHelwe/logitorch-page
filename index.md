@@ -1,3 +1,6 @@
+![image](logo.jpg)
+
+
 LogiTorch is a PyTorch-based library for logical reasoning on natural language, it consists of:
 
 - Textual logical reasoning datasets

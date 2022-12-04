@@ -49,6 +49,7 @@ Models implemented in LogiTorch:
 - [x]  [ProofWriter](https://arxiv.org/abs/2012.13048)
 - [x]  [BERTNOT](https://arxiv.org/abs/2105.03519)
 - [x]  [PRover](https://arxiv.org/abs/2010.02830)
+- [ ]  [TINA](https://suchanek.name/work/publications/emnlp-2022.pdf)
 - [ ]  [FaiRR](https://arxiv.org/abs/2203.10261)
 - [ ]  [LReasoner](https://arxiv.org/abs/2105.03659)
 - [ ]  [DAGN](https://arxiv.org/abs/2103.14349)
@@ -56,6 +57,7 @@ Models implemented in LogiTorch:
 - [ ]  [AdaLoGN](https://arxiv.org/abs/2203.08992)
 - [ ]  [Logiformer](https://arxiv.org/abs/2205.00731)
 - [ ]  [LogiGAN](https://arxiv.org/abs/2205.08794)
+- [ ]  [MERit](https://arxiv.org/abs/2203.00357)
 
 ## 🧪 Example Usage
 
@@ -92,8 +94,31 @@ checkpoint_callback = ModelCheckpoint(
     filename="best_ruletaker",
 )
 
-trainer = pl.Trainer(accelerator="gpu", gpus=1)
+trainer = pl.Trainer(callbacks=[checkpoint_callback], accelerator="gpu", gpus=1)
 trainer.fit(model, train_dataloader, val_dataloader)
+```
+
+### Pipeline Example
+
+We provided pre-configured pipelines for some datasets to train models.
+
+```python
+from logitorch.pipelines.proof_qa_pipelines import ruletaker_pipeline
+from logitorch.pl_models.ruletaker import PLRuleTaker
+
+model = PLRuleTaker(learning_rate=1e-5, weight_decay=0.1)
+
+ruletaker_pipeline(
+    model=model,
+    dataset_name="depth-5",
+    saved_model_name="models/",
+    saved_model_path="best_ruletaker",
+    batch_size=32,
+    epochs=10,
+    accelerator="gpu",
+    gpus=1,
+)
+
 ```
 
 ### Testing Example

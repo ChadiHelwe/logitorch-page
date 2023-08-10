@@ -37,6 +37,9 @@ Datasets implemented in LogiTorch:
 - [x] [PARARULES Plus](https://github.com/Strong-AI-Lab/PARARULE-Plus) <sub>(MIT LICENSE)</sub>
 - [x] [AbductionRules](https://arxiv.org/abs/2203.12186) <sub>(MIT LICENSE)</sub>
 - [x] [FOLIO](https://arxiv.org/abs/2209.00840) <sub>(CC-BY-SA-4.0 LICENSE)</sub>
+- [ ] [LogiQA2.0](https://arxiv.org/abs/2007.08124)
+- [ ] [LogiQA20 NLI](https://arxiv.org/abs/2007.08124) 
+- [ ] [HELP](https://aclanthology.org/S19-1027.pdf) 
 - [ ] [SimpleLogic](https://arxiv.org/abs/2205.11502)
 - [ ] [RobustLR](https://arxiv.org/abs/2205.12598)
 - [ ] [LogicNLI](https://aclanthology.org/2021.emnlp-main.303/)
@@ -58,7 +61,9 @@ Models implemented in LogiTorch:
 - [ ]  [Logiformer](https://arxiv.org/abs/2205.00731)
 - [ ]  [LogiGAN](https://arxiv.org/abs/2205.08794)
 - [ ]  [MERit](https://arxiv.org/abs/2203.00357)
-
+- [ ]  [APOLLO](https://arxiv.org/abs/2212.09282)
+- [ ]  [LAMBADA](https://arxiv.org/abs/2212.13894)
+- [ ]  [Chainformer](https://aclanthology.org/2023.findings-acl.588/)
 ## 🧪 Example Usage
 
 ### Training Example
@@ -103,7 +108,7 @@ trainer.fit(model, train_dataloader, val_dataloader)
 We provided pre-configured pipelines for some datasets to train models.
 
 ```python
-from logitorch.pipelines.proof_qa_pipelines import ruletaker_pipeline
+from logitorch.pipelines.qa_pipelines import ruletaker_pipeline
 from logitorch.pl_models.ruletaker import PLRuleTaker
 
 model = PLRuleTaker(learning_rate=1e-5, weight_decay=0.1)

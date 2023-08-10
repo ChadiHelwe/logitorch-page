@@ -12,6 +12,12 @@ LogiTorch is a PyTorch-based library for logical reasoning on natural language, 
 foo@bar:~$ pip install logitorch==0.0.1a2
 ```
 
+Or
+
+```console
+foo@bar:~$  pip install git+https://github.com/LogiTorch/logitorch.git
+```
+
 ## 📖 Documentation
 
 You can find the documentation for LogiTorch on [ReadTheDocs](https://logitorch.readthedocs.io).
@@ -159,3 +165,4 @@ If you want to cite LogiTorch, please refer to the publication in the [Empirical
 ## Acknowledgments
 
 This work was partially funded by ANR-20-CHIA-0012-01 (“NoRDF”).
+

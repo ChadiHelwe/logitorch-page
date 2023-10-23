@@ -43,6 +43,7 @@ Datasets implemented in LogiTorch:
 - [x] [PARARULES Plus](https://github.com/Strong-AI-Lab/PARARULE-Plus) <sub>(MIT LICENSE)</sub>
 - [x] [AbductionRules](https://arxiv.org/abs/2203.12186) <sub>(MIT LICENSE)</sub>
 - [x] [FOLIO](https://arxiv.org/abs/2209.00840) <sub>(CC-BY-SA-4.0 LICENSE)</sub>
+- [x] [FLD](https://proceedings.mlr.press/v202/morishita23a.html)  <sub>(CC-BY-SA-4.0 LICENSE)</sub>
 - [ ] [LogiQA2.0](https://arxiv.org/abs/2007.08124)
 - [ ] [LogiQA20 NLI](https://arxiv.org/abs/2007.08124) 
 - [ ] [HELP](https://aclanthology.org/S19-1027.pdf) 
@@ -58,6 +59,7 @@ Models implemented in LogiTorch:
 - [x]  [ProofWriter](https://arxiv.org/abs/2012.13048)
 - [x]  [BERTNOT](https://arxiv.org/abs/2105.03519)
 - [x]  [PRover](https://arxiv.org/abs/2010.02830)
+- [x]  [FLDProver](https://proceedings.mlr.press/v202/morishita23a.html)
 - [ ]  [TINA](https://suchanek.name/work/publications/emnlp-2022.pdf)
 - [ ]  [FaiRR](https://arxiv.org/abs/2203.10261)
 - [ ]  [LReasoner](https://arxiv.org/abs/2105.03659)
@@ -70,6 +72,7 @@ Models implemented in LogiTorch:
 - [ ]  [APOLLO](https://arxiv.org/abs/2212.09282)
 - [ ]  [LAMBADA](https://arxiv.org/abs/2212.13894)
 - [ ]  [Chainformer](https://aclanthology.org/2023.findings-acl.588/)
+- [ ]  [IDOL](https://aclanthology.org/2023.findings-acl.513/)
 ## 🧪 Example Usage
 
 ### Training Example
@@ -165,4 +168,3 @@ If you want to cite LogiTorch, please refer to the publication in the [Empirical
 ## Acknowledgments
 
 This work was partially funded by ANR-20-CHIA-0012-01 (“NoRDF”).
-
